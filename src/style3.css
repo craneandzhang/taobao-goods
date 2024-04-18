@@ -1,0 +1,55 @@
+.app-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.category-list {
+  width: 200px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  flex-grow: 1;
+  overflow-y: auto; /* 添加滚动条 */
+}
+
+.subcategory-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.subcategory-title {
+  margin-left: 10px; /* 二级分类标题偏左 */
+  font-size: 18px;
+  color: #333;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: slideIn 0.3s ease-out; /* 添加滑动动画 */
+}
+
+.product {
+  width: 150px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

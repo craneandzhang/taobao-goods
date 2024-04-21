@@ -1,0 +1,64 @@
+/* 更新 style.css */
+
+/* 限制整个页面的大小 */
+.outer-container {
+  /* width: 100%; */
+  width: 600px;
+  height: 800px;
+}
+
+/* 页面主要内容容器，左右布局 */
+.app-container {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  border: 1px solid black;
+}
+
+/* 左侧分类列表容器样式 */
+.category-list {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* 添加滚动条样式 */
+  height: 100px;
+}
+
+/* 右侧商品展示区容器样式 */
+.right-panel {
+  width: 500px;
+  overflow-y: auto;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 二级分类容器样式 */
+.subcategory-list {
+  /* height: 1em; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+/* 商品区域样式 */
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-sizing: border-box; /* 盒模型设置为边框盒 */
+  border: 1px solid #ccc; /* 添加边框 */
+  text-align: center;
+}
+.product {
+  width: 80px;
+}
+/* 商品图片样式 */
+.product img {
+  width: 90%;
+  height: auto;
+}
+.active {
+  background-color: orange;
+}
